@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-explore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "postcss ./css/tailwind.css -o public/build/tailwind.css",
+    "build": "echo 'build done'",
+    "prestart": "postcss ./css/tailwind.css -o public/build/tailwind.css",
+    "start": "live-server ./public/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
